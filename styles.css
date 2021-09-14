@@ -1,0 +1,68 @@
+:root {
+  --infected-color: #dc3545;
+  --uninfected-color: #198754;
+  --ocean-color: #0d6efd;
+  --black-color: #333;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  color: var(--black-color);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  height: 25px;
+}
+
+.map__element {
+  flex: 1;
+  border-right: 1px solid var(--black-color);
+}
+
+.map__element:last-child {
+  border-right: none;
+}
+
+.map__element--uninfected {
+  background: var(--uninfected-color);
+}
+
+.map__element--infected {
+  background: var(--infected-color);
+}
+
+.map__element--ocean {
+  background: var(--ocean-color);
+}
+
+.main {
+  padding: 1rem;
+}
+
+.start {
+  margin-bottom: 1rem;
+}
+
+.end {
+  margin-bottom: 1rem;
+}
